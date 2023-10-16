@@ -1,1 +1,1 @@
-# -bomberman_master_explotion
+# bomberman_master_explotion

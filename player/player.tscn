@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bfo5om7bbsp1m"]
+[gd_scene load_steps=14 format=3 uid="uid://bfo5om7bbsp1m"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_y5jvx"]
 [ext_resource type="Texture2D" uid="uid://o61pjmd5o656" path="res://Sprites/Player/Player_1_0001.png" id="2_ync1u"]
@@ -52,6 +52,30 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [8]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite_jugador:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_tebov"]
@@ -149,11 +173,52 @@ tracks/0/keys = {
 "values": [16]
 }
 
+[sub_resource type="Animation" id="Animation_uv6f8"]
+resource_name = "anim_muerte"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite_jugador:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [24, 25, 26, 28, 29, 30]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite_jugador:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.8),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_k2m6w"]
 _data = {
 "Caminar_X": SubResource("Animation_61kl8"),
 "Idle_y_down": SubResource("Animation_c0vpu"),
 "RESET": SubResource("Animation_rgcb6"),
+"anim_muerte": SubResource("Animation_uv6f8"),
 "caminar_down": SubResource("Animation_tebov"),
 "caminar_up": SubResource("Animation_twl5l"),
 "idle_x_left": SubResource("Animation_nbh6h"),

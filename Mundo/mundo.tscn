@@ -1,5 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://1pkl1tt6xgig"]
+[gd_scene load_steps=18 format=3 uid="uid://1pkl1tt6xgig"]
 
+[ext_resource type="Script" path="res://Mundo/mundo.gd" id="1_fpj3h"]
 [ext_resource type="Texture2D" uid="uid://dx2nd1pwsc2u1" path="res://Mundo/Ground.png" id="2_hviw0"]
 [ext_resource type="Texture2D" uid="uid://lxkt5sa418md" path="res://Mundo/Block.png" id="2_j1b3c"]
 [ext_resource type="Texture2D" uid="uid://pf6yrq5iyu1k" path="res://Mundo/Brick.png" id="3_e1aq4"]
@@ -10,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://jge4sj0njurm" path="res://player/player_3.tscn" id="7_cluqf"]
 [ext_resource type="PackedScene" uid="uid://ccpfme72fu3lp" path="res://Objetos/bomba_1.tscn" id="9_gbgwh"]
 [ext_resource type="PackedScene" uid="uid://xce2ets3ko5x" path="res://Objetos/bomba_2.tscn" id="10_kqjcb"]
+[ext_resource type="AudioStream" uid="uid://dc5olvivwcivt" path="res://music/x2mate.com-Bomberman-_NES_-Music-Stage-Theme-_128-kbps_.wav" id="11_tw4mm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mo51f"]
 texture = ExtResource("2_j1b3c")
@@ -41,6 +43,7 @@ sources/2 = SubResource("TileSetAtlasSource_myig4")
 sources/3 = SubResource("TileSetAtlasSource_k4252")
 
 [node name="Mundo" type="Node"]
+script = ExtResource("1_fpj3h")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(64, 16)
@@ -65,3 +68,7 @@ position = Vector2(344, 40)
 
 [node name="Bomba_2" parent="." instance=ExtResource("10_kqjcb")]
 position = Vector2(344, 201)
+
+[node name="audioFondo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_tw4mm")
+volume_db = -3.5

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://vbu5hcm06e7h"]
+
+[ext_resource type="Texture2D" uid="uid://4aqyd57dmvrd" path="res://Sprites/Bloque_explot/Brick.png" id="1_t7nfc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5m14"]
+size = Vector2(16, 16)
+
+[node name="bloque_destruible" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_t7nfc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_f5m14")

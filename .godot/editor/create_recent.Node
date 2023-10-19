@@ -1,0 +1,6 @@
+AudioStreamPlayer
+TileMap
+Sprite2D
+AnimationPlayer
+CollisionShape2D
+CharacterBody2D

@@ -1,6 +1,10 @@
-AudioStreamPlayer
-TileMap
+Area2D
 Sprite2D
-AnimationPlayer
 CollisionShape2D
+AudioStreamPlayer
+Node2D
+Label
+Node
+AnimationPlayer
 CharacterBody2D
+TileMap

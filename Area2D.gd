@@ -1,4 +1,6 @@
-extends CharacterBody2D
+extends Area2D
+func _on_Bom_body_enter (body):
+	print ("El jugador esta tocando la bomba")
 @onready var Player_1 = $"../Player"
 @onready var Bomb = $"."
 #Traer animaciones bomba jugador 1
@@ -25,8 +27,3 @@ func _input(event):
 		timer.start() # Iniciamos el temporizador
 func _on_timer_timeout():
 	canUseSpaceInput = true
-	#desde aqui hubo cambios
-	var player_pos = Player_1.global_position
-	var coli2_x_pos = $coli2_x.global_position
-	var coli3_x_pos = $coli3_x.global_position
-	

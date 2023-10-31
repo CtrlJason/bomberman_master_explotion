@@ -1,1 +1,11 @@
 res://Mundo/mundo.tscn
+res://Objetos/bomba.gd
+res://Objetos/bomba_1.gd
+res://Objetos/bomba_2.gd
+res://player/player.tscn
+res://Objetos/bomba.tscn
+res://vidas.tscn
+res://vidas.gd
+res://Mundo/mundo.gd
+res://Area2D.gd
+res://Objetos/bom.tscn

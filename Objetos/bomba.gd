@@ -16,17 +16,20 @@ func _ready():
 	anim_tree.active = true #inicializar animaciones de la bomba aquí
 	timer = $Timer # Inicializa el temporizador aquí
 func _process(delta):
-	var player_position = Player_1.global_position
+	var player_posaition = Player_1.global_position
+
 func _input(event):
 	if  canUseSpaceInput and Input.is_key_pressed(KEY_SPACE):
 		Bomb.position = Player_1.global_position
 		anim_tree_playback.travel("proceso_0")
 		canUseSpaceInput = false #desactivamos el uso de la tecla espacio
 		timer.start() # Iniciamos el temporizador
+
 func _on_timer_timeout():
 	canUseSpaceInput = true
 	#desde aqui hubo cambios
-	var player_pos = Player_1.global_position
-	var coli2_x_pos = $coli2_x.global_position
-	var coli3_x_pos = $coli3_x.global_position
-	
+func _on_area_2d_body_entered(body):
+	print(body.name)
+	if body.is_in_group("jugador"):
+		print ("muelto")
+

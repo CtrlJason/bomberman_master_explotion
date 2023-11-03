@@ -161,7 +161,7 @@ _data = {
 "idle_y_up": SubResource("Animation_qhxm4")
 }
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["jugador"]]
 position = Vector2(41, 125)
 script = ExtResource("1_y5jvx")
 

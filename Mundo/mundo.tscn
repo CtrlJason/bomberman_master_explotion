@@ -76,7 +76,7 @@ position = Vector2(344, 201)
 [node name="Spawn_player3" type="Node2D" parent="Player_3"]
 
 [node name="Bomba" parent="." instance=ExtResource("6_hwbh2")]
-position = Vector2(15, 43)
+position = Vector2(217, 104)
 
 [node name="Bomba_1" parent="." instance=ExtResource("9_gbgwh")]
 position = Vector2(344, 40)

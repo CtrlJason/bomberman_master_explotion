@@ -26,4 +26,5 @@ func _physics_process(delta):
 		anim.play("Idle_y_down")
 	sprite.flip_h = direccion.x < 0 if direccion.x != 0 else sprite.flip_h
 	move_and_slide()
-	
+func dead():
+	queue_free()

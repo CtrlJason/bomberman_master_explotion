@@ -4139,6 +4139,7 @@ shape = SubResource("CircleShape2D_f1yit")
 disabled = true
 
 [node name="Area2D" type="Area2D" parent="."]
+monitoring = false
 
 [node name="e_0" type="Sprite2D" parent="Area2D"]
 visible = false
@@ -4256,7 +4257,7 @@ anim_player = NodePath("../AnimationBomb")
 active = true
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.5
+wait_time = 2.8
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

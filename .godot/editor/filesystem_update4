@@ -1,6 +1,8 @@
 res://Objetos/bomba.tscn
+res://Objetos/bomba.gd
 res://Mundo/mundo.tscn
 res://player/player.tscn
 res://vidas.tscn
-res://Objetos/bomba.gd
 res://player/player.gd
+res://Objetos/bomba_1.tscn
+res://vidas.gd

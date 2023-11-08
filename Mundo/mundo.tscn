@@ -65,12 +65,12 @@ position = Vector2(87, 40)
 
 [node name="Spawn_player1" type="Node2D" parent="Player"]
 
-[node name="Player_2" parent="." instance=ExtResource("6_3rs0l")]
+[node name="Player_2" parent="." groups=["jugador"] instance=ExtResource("6_3rs0l")]
 position = Vector2(344, 40)
 
 [node name="Spawn_player2" type="Node2D" parent="Player_2"]
 
-[node name="Player_3" parent="." instance=ExtResource("7_cluqf")]
+[node name="Player_3" parent="." groups=["jugador"] instance=ExtResource("7_cluqf")]
 position = Vector2(344, 201)
 
 [node name="Spawn_player3" type="Node2D" parent="Player_3"]

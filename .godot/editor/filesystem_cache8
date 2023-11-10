@@ -1,54 +1,61 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699479097
-Area2D.gd::GDScript::-1::1699479077::0::1::::<>Area2D<>::
-export_presets.cfg::TextFile::-1::1699479047::0::1::::<><>::
-icon.svg::CompressedTexture2D::7821969865692291959::1699479047::1699479076::1::::<><>::
-README.md::TextFile::-1::1699479047::0::1::::<><>::
-vidas.gd::GDScript::-1::1699479077::0::1::::<>Node2D<>::
-vidas.tscn::PackedScene::6299271623761862354::1699479077::0::1::::<><>::res://vidas.gd<>uid://sldvm1yhqh3::::res://Sprites/Player/Gorgeous Pixel.ttf<>uid://o61pjmd5o656::::res://Sprites/Player/Player_1_0001.png<>uid://0e0r42lbvn6q::::res://Sprites/Player/Player_2_0001_0001.png<>uid://d1a5hf174rdo1::::res://Sprites/Player/Player_3_0001_0001.png
-vidasp1.gd::GDScript::-1::1699479077::0::1::::<>Node2D<>::
-vidasp2.gd::GDScript::-1::1699479077::0::1::::<>Node2D<>::
-vidasp3.gd::GDScript::-1::1699479077::0::1::::<>Node2D<>::
-::res://Mundo/::1699479077
-Block.png::CompressedTexture2D::820200671920386751::1699479047::1699479076::1::::<><>::
-Brick.png::CompressedTexture2D::1065080548158806350::1699479047::1699479076::1::::<><>::
-Ground.png::CompressedTexture2D::8830139722204254558::1699479047::1699479076::1::::<><>::
-GroundShadow.png::CompressedTexture2D::3563469106522952453::1699479047::1699479076::1::::<><>::
-mundo.gd::GDScript::-1::1699479077::0::1::::<>Node<>::
-mundo.tscn::PackedScene::1856503810424355446::1699479077::0::1::::<><>::res://Mundo/mundo.gd<>uid://dx2nd1pwsc2u1::::res://Mundo/Ground.png<>uid://lxkt5sa418md::::res://Mundo/Block.png<>uid://8083k86wmkjp::::res://Sprites/fon d.png<>uid://pf6yrq5iyu1k::::res://Mundo/Brick.png<>uid://bq1f2y1tu5pbx::::res://Mundo/GroundShadow.png<>uid://bfo5om7bbsp1m::::res://player/player.tscn<>uid://cx18j71ydhg5b::::res://player/player_2.tscn<>uid://bpt0lyxbrdkly::::res://Objetos/bomba.tscn<>uid://jge4sj0njurm::::res://player/player_3.tscn<>uid://ccpfme72fu3lp::::res://Objetos/bomba_1.tscn<>uid://xce2ets3ko5x::::res://Objetos/bomba_2.tscn<>uid://dc5olvivwcivt::::res://music/x2mate.com-Bomberman-_NES_-Music-Stage-Theme-_128-kbps_.wav<>uid://cv0oc3kl26hbm::::res://vidas.tscn
-::res://music/::1699479077
-x2mate.com-Bomberman-_NES_-Music-Stage-Theme-_128-kbps_.wav::AudioStreamWAV::7362441868941265805::1699479077::1699479077::1::::<><>::
-::res://Objetos/::1699479077
-bom.tscn::PackedScene::6890923281934120394::1699479077::0::1::::<><>::res://Area2D.gd<>uid://c831a2ijshf8l::::res://Sprites/Explosion/ExplosionStart.png<>uid://dqroaovvjlvfk::::res://Sprites/Bomb/Bomb.png<>uid://dkxstxaqkd1tu::::res://Sprites/Explosion/ExplosionMiddle.png<>uid://x06dherw6jlb::::res://Sprites/Explosion/ExplosionEnd.png
-bomba.gd::GDScript::-1::1699479077::0::1::::<>CharacterBody2D<>::
-bomba.tscn::PackedScene::3480015380302026046::1699479077::0::1::::<><>::res://Objetos/bomba.gd<>uid://dqroaovvjlvfk::::res://Sprites/Bomb/Bomb.png<>uid://c831a2ijshf8l::::res://Sprites/Explosion/ExplosionStart.png<>uid://dkxstxaqkd1tu::::res://Sprites/Explosion/ExplosionMiddle.png<>uid://x06dherw6jlb::::res://Sprites/Explosion/ExplosionEnd.png
-bomba_1.gd::GDScript::-1::1699479047::0::1::::<>CharacterBody2D<>::
-bomba_1.tscn::PackedScene::4944509996225253445::1699479047::0::1::::<><>::res://Objetos/bomba_1.gd<>uid://dqroaovvjlvfk::::res://Sprites/Bomb/Bomb.png<>uid://c831a2ijshf8l::::res://Sprites/Explosion/ExplosionStart.png<>uid://dkxstxaqkd1tu::::res://Sprites/Explosion/ExplosionMiddle.png<>uid://x06dherw6jlb::::res://Sprites/Explosion/ExplosionEnd.png
-bomba_2.gd::GDScript::-1::1699479047::0::1::::<>CharacterBody2D<>::
-bomba_2.tscn::PackedScene::1618763483889712219::1699479047::0::1::::<><>::res://Objetos/bomba_2.gd<>uid://dqroaovvjlvfk::::res://Sprites/Bomb/Bomb.png<>uid://c831a2ijshf8l::::res://Sprites/Explosion/ExplosionStart.png<>uid://dkxstxaqkd1tu::::res://Sprites/Explosion/ExplosionMiddle.png<>uid://x06dherw6jlb::::res://Sprites/Explosion/ExplosionEnd.png
-::res://Objetos/Bloque_destruible/::1699479077
-bloque_destruible.tscn::PackedScene::1477298379158133471::1699479077::0::1::::<><>::uid://4aqyd57dmvrd::::res://Sprites/Bloque_explot/Brick.png
-::res://player/::1699479077
-Player.gd::GDScript::-1::1699479077::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::2768113381099202812::1699479077::0::1::::<><>::res://player/player.gd<>uid://o61pjmd5o656::::res://Sprites/Player/Player_1_0001.png
-player_2.gd::GDScript::-1::1699479047::0::1::::<>CharacterBody2D<>::
-player_2.tscn::PackedScene::6442880047579800189::1699479047::0::1::::<><>::res://player/player_2.gd<>uid://0e0r42lbvn6q::::res://Sprites/Player/Player_2_0001_0001.png
-player_3.gd::GDScript::-1::1699479047::0::1::::<>CharacterBody2D<>::
-player_3.tscn::PackedScene::644381475738135702::1699479047::0::1::::<><>::res://player/player_3.gd<>uid://d1a5hf174rdo1::::res://Sprites/Player/Player_3_0001_0001.png
-::res://Sprites/::1699479077
-fon d.png::CompressedTexture2D::2369895524547621705::1699479077::1699479077::1::::<><>::
-::res://Sprites/Bloque_explot/::1699479077
-Big Apple 3PM.ttf::FontFile::7486867319041123653::1699479077::1699479077::1::::<><>::
-Brick.png::CompressedTexture2D::2036491001813542057::1699479077::1699479077::1::::<><>::
-BrickDestroy.png::CompressedTexture2D::6882432771726622467::1699479077::1699479077::1::::<><>::
-::res://Sprites/Bomb/::1699479077
-Bomb.png::CompressedTexture2D::8318228777739990480::1699479047::1699479077::1::::<><>::
-::res://Sprites/Explosion/::1699479077
-ExplosionEnd.png::CompressedTexture2D::1667840806329413779::1699479047::1699479077::1::::<><>::
-ExplosionMiddle.png::CompressedTexture2D::7909759220534523322::1699479047::1699479077::1::::<><>::
-ExplosionStart.png::CompressedTexture2D::7148455857289016697::1699479047::1699479077::1::::<><>::
-::res://Sprites/Player/::1699479077
-Gorgeous Pixel.ttf::FontFile::37833166616914754::1699479077::1699479077::1::::<><>::
-Player_1_0001.png::CompressedTexture2D::1048245441453595719::1699479047::1699479076::1::::<><>::
-Player_2_0001_0001.png::CompressedTexture2D::1764528450671434426::1699479047::1699479076::1::::<><>::
-Player_3_0001_0001.png::CompressedTexture2D::8986006300283498330::1699479047::1699479076::1::::<><>::
+::res://::1699652238
+Area2D.gd::GDScript::-1::1698970270::0::1::::<>Area2D<>::
+Bomba_p3.gd::GDScript::-1::1699378050::0::1::::<>CharacterBody2D<>::
+CanvasLaye_vidasr.gd::GDScript::-1::1699377008::0::1::::<>CanvasLayer<>::
+export_presets.cfg::TextFile::-1::1698970270::0::1::::<><>::
+Global.gd::GDScript::-1::1699222788::0::1::::<>Control<>::
+icon.svg::CompressedTexture2D::7821969865692291959::1698970270::1698970270::1::::<><>::
+README.md::TextFile::-1::1698970270::0::1::::<><>::
+vidas.gd::GDScript::-1::1699377452::0::1::::<>Node2D<>::
+vidas.tscn::PackedScene::6299271623761862354::1699378098::0::1::::<><>::res://vidas.gd<>uid://sldvm1yhqh3::::res://Sprites/Player/Gorgeous Pixel.ttf<>uid://o61pjmd5o656::::res://Sprites/Player/Player_1_0001.png<>res://CanvasLaye_vidasr.gd<>res://Global.gd<>uid://0e0r42lbvn6q::::res://Sprites/Player/Player_2_0001_0001.png<>uid://d1a5hf174rdo1::::res://Sprites/Player/Player_3_0001_0001.png
+vidasp1.gd::GDScript::-1::1698970270::0::1::::<>Node2D<>::
+vidasp2.gd::GDScript::-1::1698970270::0::1::::<>Node2D<>::
+vidasp3.gd::GDScript::-1::1698970270::0::1::::<>Node2D<>::
+::res://Mundo/::1699652167
+Block.png::CompressedTexture2D::820200671920386751::1698970270::1698970270::1::::<><>::
+Brick.png::CompressedTexture2D::1065080548158806350::1698970270::1698970270::1::::<><>::
+Ground.png::CompressedTexture2D::8830139722204254558::1698970270::1698970270::1::::<><>::
+GroundShadow.png::CompressedTexture2D::3563469106522952453::1698970270::1698970270::1::::<><>::
+mundo.gd::GDScript::-1::1699141726::0::1::::<>Node<>::
+mundo.tscn::PackedScene::1856503810424355446::1699378172::0::1::::<><>::res://Mundo/mundo.gd<>uid://dx2nd1pwsc2u1::::res://Mundo/Ground.png<>uid://lxkt5sa418md::::res://Mundo/Block.png<>uid://danuttonorj60::::res://Objetos/bomba_p_2.tscn<>uid://8083k86wmkjp::::res://Sprites/fon d.png<>uid://pf6yrq5iyu1k::::res://Mundo/Brick.png<>uid://bq1f2y1tu5pbx::::res://Mundo/GroundShadow.png<>uid://bfo5om7bbsp1m::::res://player/player.tscn<>uid://cx18j71ydhg5b::::res://player/player_2.tscn<>uid://bpt0lyxbrdkly::::res://Objetos/bomba.tscn<>uid://jge4sj0njurm::::res://player/player_3.tscn<>res://Mundo/Spawn_player1.gd<>uid://dc5olvivwcivt::::res://music/x2mate.com-Bomberman-_NES_-Music-Stage-Theme-_128-kbps_.wav<>uid://b0egbm8m2n7u7::::res://Objetos/bomba_p_3.tscn<>uid://cv0oc3kl26hbm::::res://vidas.tscn
+Spawn_player1.gd::GDScript::-1::1699215058::0::1::::<>Node2D<>::
+::res://music/::1699652167
+x2mate.com-Bomberman-_NES_-Music-Stage-Theme-_128-kbps_.wav::AudioStreamWAV::7362441868941265805::1698970270::1698970270::1::::<><>::
+::res://Objetos/::1699652167
+bom.tscn::PackedScene::6890923281934120394::1698970270::0::1::::<><>::res://Area2D.gd<>uid://c831a2ijshf8l
+bomba.gd::GDScript::-1::1699377874::0::1::::<>CharacterBody2D<>::
+bomba.tscn::PackedScene::3480015380302026046::1699378096::0::1::::<><>::res://Objetos/bomba.gd<>uid://dqroaovvjlvfk::::res://Sprites/Bomb/Bomb.png<>uid://c831a2ijshf8l::::res://Sprites/Explosion/ExplosionStart.png<>uid://dkxstxaqkd1tu::::res://Sprites/Explosion/ExplosionMiddle.png<>uid://x06dherw6jlb::::res://Sprites/Explosion/ExplosionEnd.png
+bomba_1.gd::GDScript::-1::1699141726::0::1::::<>CharacterBody2D<>::
+bomba_1.tscn::PackedScene::4944509996225253445::1698970270::0::1::::<><>::res://Objetos/bomba_1.gd<>uid://dqroaovvjlvfk
+bomba_2.gd::GDScript::-1::1699378172::0::1::::<>CharacterBody2D<>::
+bomba_2.tscn::PackedScene::1618763483889712219::1698970270::0::1::::<><>::res://Objetos/bomba_2.gd<>uid://dqroaovvjlvfk
+bomba_p_2.gd::GDScript::-1::1699377832::0::1::::<>CharacterBody2D<>::
+bomba_p_2.tscn::PackedScene::7187348252002565987::1699378098::0::1::::<><>::res://Objetos/bomba_p_2.gd<>uid://dqroaovvjlvfk::::res://Sprites/Bomb/Bomb.png<>uid://c831a2ijshf8l::::res://Sprites/Explosion/ExplosionStart.png<>uid://dkxstxaqkd1tu::::res://Sprites/Explosion/ExplosionMiddle.png<>uid://x06dherw6jlb::::res://Sprites/Explosion/ExplosionEnd.png
+bomba_p_3.tscn::PackedScene::4149766055251255712::1699378100::0::1::::<><>::res://Bomba_p3.gd<>uid://dqroaovvjlvfk::::res://Sprites/Bomb/Bomb.png<>uid://c831a2ijshf8l::::res://Sprites/Explosion/ExplosionStart.png<>uid://dkxstxaqkd1tu::::res://Sprites/Explosion/ExplosionMiddle.png<>uid://x06dherw6jlb::::res://Sprites/Explosion/ExplosionEnd.png
+::res://Objetos/Bloque_destruible/::1699652167
+bloque_destruible.tscn::PackedScene::1477298379158133471::1698970270::0::1::::<><>::uid://4aqyd57dmvrd
+::res://player/::1699652167
+player.gd::GDScript::-1::1699141882::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::2768113381099202812::1699378098::0::1::::<><>::res://player/player.gd<>uid://o61pjmd5o656::::res://Sprites/Player/Player_1_0001.png
+player_2.gd::GDScript::-1::1699032748::0::1::::<>CharacterBody2D<>::
+player_2.tscn::PackedScene::6442880047579800189::1698970270::0::1::::<><>::res://player/player_2.gd<>uid://0e0r42lbvn6q
+player_3.gd::GDScript::-1::1698970270::0::1::::<>CharacterBody2D<>::
+player_3.tscn::PackedScene::644381475738135702::1698970270::0::1::::<><>::res://player/player_3.gd<>uid://d1a5hf174rdo1
+::res://Sprites/::1699652167
+fon d.png::CompressedTexture2D::2369895524547621705::1698970270::1698970270::1::::<><>::
+::res://Sprites/Bloque_explot/::1699652167
+Big Apple 3PM.ttf::FontFile::7486867319041123653::1698970270::1698970270::1::::<><>::
+Brick.png::CompressedTexture2D::2036491001813542057::1698970270::1698970270::1::::<><>::
+BrickDestroy.png::CompressedTexture2D::6882432771726622467::1698970270::1698970270::1::::<><>::
+::res://Sprites/Bomb/::1699652167
+Bomb.png::CompressedTexture2D::8318228777739990480::1698970270::1698970270::1::::<><>::
+::res://Sprites/Explosion/::1699652167
+ExplosionEnd.png::CompressedTexture2D::1667840806329413779::1698970270::1698970270::1::::<><>::
+ExplosionMiddle.png::CompressedTexture2D::7909759220534523322::1698970270::1698970270::1::::<><>::
+ExplosionStart.png::CompressedTexture2D::7148455857289016697::1698970270::1698970270::1::::<><>::
+::res://Sprites/Player/::1699652167
+Gorgeous Pixel.ttf::FontFile::37833166616914754::1698970270::1698970270::1::::<><>::
+Player_1_0001.png::CompressedTexture2D::1048245441453595719::1698970270::1698970270::1::::<><>::
+Player_2_0001_0001.png::CompressedTexture2D::1764528450671434426::1698970270::1698970270::1::::<><>::
+Player_3_0001_0001.png::CompressedTexture2D::8986006300283498330::1698970270::1698970270::1::::<><>::

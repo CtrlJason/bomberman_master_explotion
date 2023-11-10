@@ -1,10 +1,10 @@
-[gd_scene load_steps=34 format=3 uid="uid://bpt0lyxbrdkly"]
+[gd_scene load_steps=34 format=3 uid="uid://danuttonorj60"]
 
-[ext_resource type="Script" path="res://Objetos/bomba.gd" id="1_gi7vk"]
-[ext_resource type="Texture2D" uid="uid://dqroaovvjlvfk" path="res://Sprites/Bomb/Bomb.png" id="1_l2s2l"]
-[ext_resource type="Texture2D" uid="uid://c831a2ijshf8l" path="res://Sprites/Explosion/ExplosionStart.png" id="2_sptlb"]
-[ext_resource type="Texture2D" uid="uid://dkxstxaqkd1tu" path="res://Sprites/Explosion/ExplosionMiddle.png" id="3_xqsg2"]
-[ext_resource type="Texture2D" uid="uid://x06dherw6jlb" path="res://Sprites/Explosion/ExplosionEnd.png" id="4_wcys6"]
+[ext_resource type="Script" path="res://Objetos/bomba_p_2.gd" id="1_5jka1"]
+[ext_resource type="Texture2D" uid="uid://dqroaovvjlvfk" path="res://Sprites/Bomb/Bomb.png" id="2_5olxw"]
+[ext_resource type="Texture2D" uid="uid://c831a2ijshf8l" path="res://Sprites/Explosion/ExplosionStart.png" id="3_qk54l"]
+[ext_resource type="Texture2D" uid="uid://dkxstxaqkd1tu" path="res://Sprites/Explosion/ExplosionMiddle.png" id="4_sfxji"]
+[ext_resource type="Texture2D" uid="uid://x06dherw6jlb" path="res://Sprites/Explosion/ExplosionEnd.png" id="5_11pkx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f1yit"]
 radius = 5.0
@@ -4124,13 +4124,13 @@ states/proceso_0/position = Vector2(320, 100)
 transitions = ["proceso_0", "boom_x_y_0", SubResource("AnimationNodeStateMachineTransition_hr2py")]
 graph_offset = Vector2(32.226, 55.3181)
 
-[node name="Bomba" type="CharacterBody2D"]
-position = Vector2(59, 50)
-script = ExtResource("1_gi7vk")
+[node name="Bomba_P2" type="CharacterBody2D"]
+position = Vector2(183, -85)
+script = ExtResource("1_5jka1")
 
 [node name="Bomb" type="Sprite2D" parent="."]
 visible = false
-texture = ExtResource("1_l2s2l")
+texture = ExtResource("2_5olxw")
 hframes = 4
 frame = 3
 
@@ -4142,28 +4142,28 @@ disabled = true
 
 [node name="e_0" type="Sprite2D" parent="Area2D"]
 visible = false
-texture = ExtResource("2_sptlb")
+texture = ExtResource("3_qk54l")
 hframes = 8
 frame = 7
 
 [node name="e_x_1_0" type="Sprite2D" parent="Area2D"]
 visible = false
 position = Vector2(-16, 0)
-texture = ExtResource("3_xqsg2")
+texture = ExtResource("4_sfxji")
 hframes = 8
 frame = 7
 
 [node name="e_x_1_1" type="Sprite2D" parent="Area2D"]
 visible = false
 position = Vector2(16, 0)
-texture = ExtResource("3_xqsg2")
+texture = ExtResource("4_sfxji")
 hframes = 8
 frame = 7
 
 [node name="e_x_2_0" type="Sprite2D" parent="Area2D"]
 visible = false
 position = Vector2(-32, 0)
-texture = ExtResource("4_wcys6")
+texture = ExtResource("5_11pkx")
 flip_h = true
 hframes = 8
 frame = 7
@@ -4171,7 +4171,7 @@ frame = 7
 [node name="e_x_2_1" type="Sprite2D" parent="Area2D"]
 visible = false
 position = Vector2(32, 0)
-texture = ExtResource("4_wcys6")
+texture = ExtResource("5_11pkx")
 hframes = 8
 frame = 7
 
@@ -4179,7 +4179,7 @@ frame = 7
 visible = false
 position = Vector2(0, -16)
 rotation = 1.5708
-texture = ExtResource("3_xqsg2")
+texture = ExtResource("4_sfxji")
 hframes = 8
 frame = 7
 
@@ -4187,7 +4187,7 @@ frame = 7
 visible = false
 position = Vector2(0, 16)
 rotation = 1.5708
-texture = ExtResource("3_xqsg2")
+texture = ExtResource("4_sfxji")
 flip_h = true
 hframes = 8
 frame = 7
@@ -4196,7 +4196,7 @@ frame = 7
 visible = false
 position = Vector2(0, -32)
 rotation = 1.5708
-texture = ExtResource("4_wcys6")
+texture = ExtResource("5_11pkx")
 flip_h = true
 hframes = 8
 frame = 7
@@ -4205,7 +4205,7 @@ frame = 7
 visible = false
 position = Vector2(0, 32)
 rotation = 1.5708
-texture = ExtResource("4_wcys6")
+texture = ExtResource("5_11pkx")
 hframes = 8
 frame = 7
 
@@ -4258,5 +4258,5 @@ active = true
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.5
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered" flags=18]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout" flags=18]

@@ -1,5 +1,5 @@
 extends CharacterBody2D
-@onready var Player_1 = $"../Player"
+@onready var Player3 = $"../Player_3"
 @onready var Bomb = $"."
 #Traer animaciones bomba jugador 1
 @onready var anim_tree : AnimationTree = $AnimationTree
@@ -18,22 +18,22 @@ func _ready():
 	timer = $Timer # Inicializa el temporizador aquí
 	area_explosion.monitoring = false
 func _processs(delta):
-	var player_posaition = Player_1.global_position
+	var player_posaition = Player3.global_position
 
 func _input(event):
-	if  canUseSpaceInput and Input.is_key_pressed(KEY_SPACE):
-		Bomb.position = Player_1.global_position
+	if  canUseSpaceInput and Input.is_key_pressed(KEY_KP_0):
+		Bomb.position = Player3.global_position
 		anim_tree_playback.travel("proceso_0")
 		canUseSpaceInput = false #desactivamos el uso de la tecla espacio
 		area_explosion.monitoring = false #Esto desactiva la hitbox de la explosion
 		timer.start() # Iniciamos el temporizador
 
 func _on_timer_timeout():
-	area_explosion.monitoring = true
 	canUseSpaceInput = true
 	#desde aqui hubo cambios
 
 #Variables de las vidas vida(jugador)
+
 
 func _on_area_2d_body_entered(body): #si un cuerpo(objeto) entra al area 2D entonces
 	if body.is_in_group("jugador"): #si un cuerpo esta en el grupo jugador ejecuta lo demas
@@ -80,6 +80,3 @@ func vidaPlayer2(body): #se crea una funcion para llarmala al _on_body
 func vidaPlayer3(body): #se crea una funcion para llamarla al on_body
 	if body.is_in_group("player3"): #si el cuerpo esta en el grupo player3
 		Global.vidasPlayer3 -=1 #llamamos la variable (vidasPlayer3, que esta en el script Global
-
-
-

@@ -18,7 +18,7 @@ func _ready():
 	anim_tree.active = true
 
 	timer = $Timer # Inicializa el temporizador aquí
-func _process(delta):
+func _process2(delta):
 	var player_position = Player_2.global_position
 func _input(event):
 	if  canUseSpaceInput and Input.is_key_pressed(KEY_CTRL):
@@ -28,3 +28,8 @@ func _input(event):
 		timer.start() # Iniciamos el temporizador
 func _on_timer_timeout():
 	canUseSpaceInput = true
+
+func _on_area_2d_body_entered(body):
+	set_process(false)
+	set_process_input(false)
+	body.queue_free()

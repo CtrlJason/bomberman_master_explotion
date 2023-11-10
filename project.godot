@@ -15,6 +15,11 @@ run/main_scene="res://Mundo/mundo.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://Global.gd"
+Vidas="*res://vidas.gd"
+
 [display]
 
 window/size/viewport_width=426

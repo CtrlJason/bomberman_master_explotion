@@ -1,0 +1,141 @@
+[gd_scene load_steps=17 format=3 uid="uid://dksewu4hm2krh"]
+
+[ext_resource type="Script" path="res://Todo_menu/controles.gd" id="1_6sbge"]
+[ext_resource type="Texture2D" uid="uid://dht8qyxpwb86m" path="res://Sprites/Player/fondo_controles.jpg" id="1_3306y"]
+[ext_resource type="Texture2D" uid="uid://clvqhy7imfer5" path="res://imagenes/Relleno.jpg" id="2_fwibf"]
+[ext_resource type="Texture2D" uid="uid://cjhxu0egty1yb" path="res://imagenes/movimiento_player1.png" id="3_b7jdb"]
+[ext_resource type="Texture2D" uid="uid://coitj8bshelc1" path="res://imagenes/espacio_player1.png" id="4_66vve"]
+[ext_resource type="Texture2D" uid="uid://d361gp7f0k6d8" path="res://imagenes/Controls.png" id="5_4lcbj"]
+[ext_resource type="Texture2D" uid="uid://dvw1n86s4ifxq" path="res://imagenes/jugador1.png" id="6_ryx2a"]
+[ext_resource type="Texture2D" uid="uid://cxlgajav31pmr" path="res://imagenes/jugador2.png" id="7_y0ml6"]
+[ext_resource type="Texture2D" uid="uid://ds24ut6napxwn" path="res://imagenes/movimiento_player2.png" id="8_w0eq5"]
+[ext_resource type="Texture2D" uid="uid://cgd384vcchdjo" path="res://imagenes/Bomba2.png" id="9_m15dj"]
+[ext_resource type="Texture2D" uid="uid://deqmyab8rx8qr" path="res://imagenes/Bomba.png" id="10_tgh4k"]
+[ext_resource type="Texture2D" uid="uid://s0ymt70ot3p" path="res://imagenes/Movimiento.png" id="11_o3sjx"]
+[ext_resource type="Texture2D" uid="uid://b5sjy5jo0ypgo" path="res://imagenes/Jugador3.png" id="12_4f1gq"]
+[ext_resource type="Texture2D" uid="uid://c063n0y8k74sg" path="res://imagenes/Controles3.png" id="13_mf6cl"]
+[ext_resource type="Texture2D" uid="uid://dxrrg2axk742j" path="res://imagenes/Bomba3.png" id="14_6426f"]
+[ext_resource type="Texture2D" uid="uid://bgbxnfpt6pdrw" path="res://imagenes/btn_regresar.png" id="16_54ik3"]
+
+[node name="Controles" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6sbge")
+
+[node name="FondoControles" type="Sprite2D" parent="."]
+position = Vector2(214, 120.25)
+scale = Vector2(0.962222, 1.05672)
+texture = ExtResource("1_3306y")
+
+[node name="Relleno" type="Sprite2D" parent="."]
+position = Vector2(214, 65)
+scale = Vector2(1.64528, 0.212454)
+texture = ExtResource("2_fwibf")
+
+[node name="MovimientoPlayer1" type="Sprite2D" parent="."]
+position = Vector2(212, 63)
+scale = Vector2(0.542424, 0.481132)
+texture = ExtResource("3_b7jdb")
+
+[node name="EspacioPlayer1" type="Sprite2D" parent="."]
+position = Vector2(349, 61)
+scale = Vector2(0.492982, 0.401639)
+texture = ExtResource("4_66vve")
+
+[node name="Controls" type="Sprite2D" parent="."]
+position = Vector2(214, 18)
+scale = Vector2(0.148438, 0.078125)
+texture = ExtResource("5_4lcbj")
+
+[node name="Jugador1" type="Sprite2D" parent="."]
+position = Vector2(76, 63)
+scale = Vector2(0.169531, 0.142969)
+texture = ExtResource("6_ryx2a")
+
+[node name="Relleno2" type="Sprite2D" parent="."]
+position = Vector2(215, 129)
+scale = Vector2(1.64528, 0.212454)
+texture = ExtResource("2_fwibf")
+
+[node name="Jugador2" type="Sprite2D" parent="."]
+position = Vector2(72, 128)
+scale = Vector2(0.173438, 0.168359)
+texture = ExtResource("7_y0ml6")
+
+[node name="MovimientoPlayer2" type="Sprite2D" parent="."]
+position = Vector2(202, 125)
+scale = Vector2(0.552447, 0.454546)
+texture = ExtResource("8_w0eq5")
+
+[node name="Bomba2" type="Sprite2D" parent="."]
+position = Vector2(347, 129)
+scale = Vector2(0.328571, 0.388889)
+texture = ExtResource("9_m15dj")
+
+[node name="Bomba3" type="Sprite2D" parent="."]
+position = Vector2(347, 86)
+scale = Vector2(0.112784, 0.093037)
+texture = ExtResource("10_tgh4k")
+
+[node name="Bomba" type="Sprite2D" parent="."]
+position = Vector2(344, 150)
+scale = Vector2(0.114453, 0.0890625)
+texture = ExtResource("10_tgh4k")
+
+[node name="Movimiento" type="Sprite2D" parent="."]
+position = Vector2(205.5, 85.5)
+scale = Vector2(0.146094, 0.110156)
+texture = ExtResource("11_o3sjx")
+
+[node name="Movimiento2" type="Sprite2D" parent="."]
+position = Vector2(206, 150)
+scale = Vector2(0.149609, 0.101172)
+texture = ExtResource("11_o3sjx")
+
+[node name="Relleno3" type="Sprite2D" parent="."]
+position = Vector2(215, 194)
+scale = Vector2(1.65283, 0.208791)
+texture = ExtResource("2_fwibf")
+
+[node name="Jugador3" type="Sprite2D" parent="."]
+position = Vector2(73, 191)
+scale = Vector2(0.170508, 0.174414)
+texture = ExtResource("12_4f1gq")
+
+[node name="Controles3" type="Sprite2D" parent="."]
+position = Vector2(209, 194)
+scale = Vector2(0.59104, 0.390288)
+texture = ExtResource("13_mf6cl")
+
+[node name="Movimiento3" type="Sprite2D" parent="."]
+position = Vector2(207, 212)
+scale = Vector2(0.150781, 0.116602)
+texture = ExtResource("11_o3sjx")
+
+[node name="Bomba4" type="Sprite2D" parent="."]
+position = Vector2(354.875, 193.875)
+scale = Vector2(0.498322, 0.328616)
+texture = ExtResource("14_6426f")
+
+[node name="Bomba5" type="Sprite2D" parent="."]
+position = Vector2(346, 215)
+scale = Vector2(0.121094, 0.0988282)
+texture = ExtResource("10_tgh4k")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 4.0
+offset_right = 390.0
+offset_bottom = 34.0
+
+[node name="BtnRegresar" type="Sprite2D" parent="."]
+position = Vector2(360.75, 20.375)
+scale = Vector2(0.0957031, 0.0900391)
+texture = ExtResource("16_54ik3")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://cb52r2ku2wxdp"]
+
+[ext_resource type="Texture2D" uid="uid://dlwew4yw68tt8" path="res://imagenes/menus.jpg" id="1_r78q5"]
+[ext_resource type="Script" path="res://Todo_menu/opcionesMenu.gd" id="1_seix5"]
+[ext_resource type="Texture2D" uid="uid://biwv82xoixhwd" path="res://imagenes/Bomberman Name.png" id="2_hrkjx"]
+[ext_resource type="Texture2D" uid="uid://bog6j5qoaa40b" path="res://imagenes/jugar_mejor.jpg" id="3_ga5y3"]
+[ext_resource type="Texture2D" uid="uid://dkxrs0epynbls" path="res://imagenes/Salir_mejor.jpg" id="4_hnvqs"]
+[ext_resource type="Texture2D" uid="uid://b7u21kkmsoeyk" path="res://imagenes/Controles.jpg" id="5_uvdps"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_seix5")
+
+[node name="imagenMenu" type="Sprite2D" parent="."]
+position = Vector2(213.25, 120)
+scale = Vector2(0.221615, 0.222222)
+texture = ExtResource("1_r78q5")
+
+[node name="bombermanName" type="Sprite2D" parent="."]
+position = Vector2(155, 54)
+scale = Vector2(0.263281, 0.257813)
+texture = ExtResource("2_hrkjx")
+
+[node name="jugar" type="Sprite2D" parent="."]
+position = Vector2(134, 94.5)
+scale = Vector2(0.0609375, 0.0611814)
+texture = ExtResource("3_ga5y3")
+
+[node name="salir" type="Sprite2D" parent="."]
+position = Vector2(135, 128.5)
+scale = Vector2(0.0609375, 0.0432836)
+texture = ExtResource("4_hnvqs")
+
+[node name="Controles2" type="Sprite2D" parent="."]
+position = Vector2(135, 164)
+scale = Vector2(0.0605469, 0.0549065)
+texture = ExtResource("5_uvdps")
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 80.0
+offset_right = 173.0
+offset_bottom = 109.0
+
+[node name="Salir" type="Button" parent="."]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 114.0
+offset_right = 174.0
+offset_bottom = 143.0
+
+[node name="Controles" type="Button" parent="."]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 149.0
+offset_right = 174.0
+offset_bottom = 179.0
+
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="Controles" to="." method="_on_controles_pressed"]

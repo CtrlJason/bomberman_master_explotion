@@ -1,0 +1,100 @@
+[gd_scene load_steps=21 format=3 uid="uid://1pkl1tt6xgig"]
+
+[ext_resource type="Script" path="res://Mundo/mundo.gd" id="1_fpj3h"]
+[ext_resource type="Texture2D" uid="uid://dx2nd1pwsc2u1" path="res://Mundo/Ground.png" id="2_hviw0"]
+[ext_resource type="Texture2D" uid="uid://lxkt5sa418md" path="res://Mundo/Block.png" id="2_j1b3c"]
+[ext_resource type="PackedScene" uid="uid://danuttonorj60" path="res://Objetos/bomba_p_2.tscn" id="2_nttsh"]
+[ext_resource type="Texture2D" uid="uid://8083k86wmkjp" path="res://Sprites/fon d.png" id="2_o8h5t"]
+[ext_resource type="Texture2D" uid="uid://pf6yrq5iyu1k" path="res://Mundo/Brick.png" id="3_e1aq4"]
+[ext_resource type="Texture2D" uid="uid://bq1f2y1tu5pbx" path="res://Mundo/GroundShadow.png" id="5_gg78e"]
+[ext_resource type="PackedScene" uid="uid://bfo5om7bbsp1m" path="res://player/player.tscn" id="5_gx4ld"]
+[ext_resource type="PackedScene" uid="uid://cx18j71ydhg5b" path="res://player/player_2.tscn" id="6_3rs0l"]
+[ext_resource type="PackedScene" uid="uid://bpt0lyxbrdkly" path="res://Objetos/bomba.tscn" id="6_hwbh2"]
+[ext_resource type="PackedScene" uid="uid://jge4sj0njurm" path="res://player/player_3.tscn" id="7_cluqf"]
+[ext_resource type="Script" path="res://Mundo/Spawn_player1.gd" id="8_p5e1w"]
+[ext_resource type="AudioStream" uid="uid://dc5olvivwcivt" path="res://music/x2mate.com-Bomberman-_NES_-Music-Stage-Theme-_128-kbps_.wav" id="11_tw4mm"]
+[ext_resource type="PackedScene" uid="uid://b0egbm8m2n7u7" path="res://Objetos/bomba_p_3.tscn" id="13_yb6yr"]
+[ext_resource type="PackedScene" uid="uid://cv0oc3kl26hbm" path="res://vidas.tscn" id="14_5r386"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mo51f"]
+texture = ExtResource("2_j1b3c")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hg0j5"]
+texture = ExtResource("3_e1aq4")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_myig4"]
+texture = ExtResource("2_hviw0")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4252"]
+texture = ExtResource("5_gg78e")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_870m4"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_mo51f")
+sources/1 = SubResource("TileSetAtlasSource_hg0j5")
+sources/2 = SubResource("TileSetAtlasSource_myig4")
+sources/3 = SubResource("TileSetAtlasSource_k4252")
+
+[node name="Mundo" type="Node"]
+script = ExtResource("1_fpj3h")
+
+[node name="fondo" type="Node2D" parent="."]
+
+[node name="fondoxd" type="Sprite2D" parent="fondo"]
+position = Vector2(213, 120)
+scale = Vector2(0.222222, 0.222222)
+texture = ExtResource("2_o8h5t")
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(64, 16)
+tile_set = SubResource("TileSet_870m4")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 2, 0, 0, 1, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 262144, 0, 0, 327680, 0, 0, 393216, 0, 0, 458752, 0, 0, 524288, 0, 0, 589824, 0, 0, 720896, 0, 0, 655360, 0, 0, 786432, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 786435, 0, 0, 786438, 0, 0, 655366, 0, 0, 524294, 0, 0, 393222, 0, 0, 262150, 0, 0, 131078, 0, 0, 786441, 0, 0, 786444, 0, 0, 524300, 0, 0, 393228, 0, 0, 262156, 0, 0, 131084, 0, 0, 786447, 0, 0, 786450, 0, 0, 655378, 0, 0, 524306, 0, 0, 393234, 0, 0, 262162, 0, 0, 131090, 0, 0, 786433, 0, 0, 786434, 0, 0, 786436, 0, 0, 786437, 0, 0, 786439, 0, 0, 786440, 0, 0, 786442, 0, 0, 786443, 0, 0, 786445, 0, 0, 786446, 0, 0, 786448, 0, 0, 786449, 0, 0, 65554, 0, 0, 196626, 0, 0, 327698, 0, 0, 458770, 0, 0, 589842, 0, 0, 720914, 0, 0, 65537, 3, 0, 131073, 2, 0, 131074, 0, 0, 65538, 3, 0, 196610, 3, 0, 262146, 0, 0, 327682, 3, 0, 393218, 0, 0, 458754, 3, 0, 524290, 0, 0, 589826, 3, 0, 655362, 0, 0, 720898, 3, 0, 720899, 2, 0, 720900, 3, 0, 720901, 2, 0, 720902, 3, 0, 720903, 2, 0, 720904, 3, 0, 720906, 3, 0, 720907, 2, 0, 720908, 3, 0, 720909, 2, 0, 720910, 3, 0, 720911, 2, 0, 720912, 3, 0, 720913, 2, 0, 655377, 2, 0, 589841, 2, 0, 524305, 2, 0, 458769, 2, 0, 393233, 2, 0, 327697, 2, 0, 262161, 2, 0, 196625, 2, 0, 131089, 2, 0, 65553, 3, 0, 65552, 3, 0, 65551, 3, 0, 65550, 3, 0, 65549, 3, 0, 65548, 3, 0, 65547, 3, 0, 65546, 3, 0, 65545, 3, 0, 65544, 3, 0, 65543, 3, 0, 65542, 3, 0, 65541, 3, 0, 65540, 3, 0, 65539, 3, 0, 196609, 2, 0, 262145, 2, 0, 327681, 2, 0, 393217, 2, 0, 458753, 2, 0, 524289, 2, 0, 589825, 2, 0, 655361, 2, 0, 720897, 2, 0, 589827, 2, 0, 589828, 3, 0, 589829, 2, 0, 589830, 3, 0, 589831, 2, 0, 589832, 3, 0, 589833, 2, 0, 589834, 3, 0, 589835, 2, 0, 589836, 3, 0, 589837, 2, 0, 589838, 3, 0, 589839, 2, 0, 589840, 3, 0, 655376, 0, 0, 524304, 0, 0, 458768, 3, 0, 393232, 0, 0, 327696, 3, 0, 262160, 0, 0, 196624, 3, 0, 131088, 0, 0, 131086, 0, 0, 196622, 3, 0, 262158, 0, 0, 327694, 3, 0, 393230, 0, 0, 458766, 3, 0, 524302, 0, 0, 655374, 0, 0, 655373, 2, 0, 524301, 2, 0, 458765, 2, 0, 393229, 2, 0, 327693, 2, 0, 262157, 2, 0, 196621, 2, 0, 131085, 2, 0, 196623, 2, 0, 196620, 3, 0, 196619, 2, 0, 196618, 3, 0, 196617, 2, 0, 196616, 3, 0, 196615, 2, 0, 196614, 3, 0, 196613, 2, 0, 196612, 3, 0, 196611, 2, 0, 131076, 0, 0, 262148, 0, 0, 327684, 3, 0, 393220, 0, 0, 458756, 3, 0, 524292, 0, 0, 655364, 0, 0, 131077, 2, 0, 262149, 2, 0, 327685, 2, 0, 393221, 2, 0, 458757, 2, 0, 524293, 2, 0, 655365, 2, 0, 327683, 2, 0, 327686, 3, 0, 327687, 2, 0, 327688, 3, 0, 327689, 2, 0, 327690, 3, 0, 327691, 2, 0, 327692, 3, 0, 327695, 2, 0, 458767, 2, 0, 458764, 3, 0, 458763, 2, 0, 458762, 3, 0, 458761, 2, 0, 458760, 3, 0, 458759, 2, 0, 458758, 3, 0, 458755, 2, 0, 131080, 0, 0, 262151, 2, 0, 131079, 2, 0, 393223, 2, 0, 393224, 0, 0, 524296, 0, 0, 655367, 2, 0, 524295, 2, 0, 655368, 0, 0, 131082, 0, 0, 262154, 0, 0, 393227, 2, 0, 524298, 0, 0, 655370, 0, 0, 524299, 2, 0, 262155, 2, 0, 131083, 2, 0, 393226, 0, 0, 655371, 2, 0, 262152, 0, 0, 655372, 0, 0, 131087, 2, 0, 262159, 2, 0, 393231, 2, 0, 524303, 2, 0, 655375, 2, 0, 131081, 2, 0, 262153, 2, 0, 393225, 2, 0, 524297, 2, 0, 655369, 2, 0, 131075, 2, 0, 262147, 2, 0, 393219, 2, 0, 524291, 2, 0, 655363, 2, 0, 720905, 2, 0)
+
+[node name="Player" parent="." groups=["player1"] instance=ExtResource("5_gx4ld")]
+position = Vector2(88, 37)
+
+[node name="Spawn_player1" type="Node2D" parent="Player"]
+position = Vector2(7, 3)
+script = ExtResource("8_p5e1w")
+
+[node name="Player_2" parent="." groups=["jugador", "player2"] instance=ExtResource("6_3rs0l")]
+position = Vector2(344, 39)
+
+[node name="Spawn_player2" type="Node2D" parent="Player_2"]
+position = Vector2(1, 1)
+
+[node name="Player_3" parent="." groups=["jugador", "player3"] instance=ExtResource("7_cluqf")]
+position = Vector2(345, 201)
+
+[node name="Spawn_player3" type="Node2D" parent="Player_3"]
+position = Vector2(0, -2)
+
+[node name="Bomba_p1" parent="." instance=ExtResource("6_hwbh2")]
+position = Vector2(183, -85)
+
+[node name="Bomba_P2" parent="." instance=ExtResource("2_nttsh")]
+position = Vector2(274, -85)
+
+[node name="Bomba_p3" parent="." instance=ExtResource("13_yb6yr")]
+position = Vector2(365, -87)
+
+[node name="audioFondo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_tw4mm")
+volume_db = -3.5
+
+[node name="vidas" parent="." instance=ExtResource("14_5r386")]
+position = Vector2(2, -2)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(213, 120)
